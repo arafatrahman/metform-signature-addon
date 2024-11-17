@@ -16,7 +16,7 @@ class Signature_Widget_View extends Widget_Base {
     }
 
     public function get_title() {
-        return __('Signature', 'metformpro');
+        return __('Signature', 'metformsa');
     }
 
     public function get_icon() {
@@ -31,7 +31,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Signature', 'metformpro'),
+                'label' => __('Signature', 'metformsa'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -40,9 +40,9 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'label_text',
             [
-                'label' => __('Label Text', 'metformpro'),
+                'label' => __('Label Text', 'metformsa'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Sign Here', 'metformpro'),
+                'default' => __('Sign Here', 'metformsa'),
             ]
         );
 
@@ -50,10 +50,10 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'show_label',
             [
-                'label' => __('Show Label', 'metformpro'),
+                'label' => __('Show Label', 'metformsa'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'metformpro'),
-                'label_off' => __('Hide', 'metformpro'),
+                'label_on' => __('Show', 'metformsa'),
+                'label_off' => __('Hide', 'metformsa'),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -63,11 +63,11 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'label_position',
             [
-                'label' => __('Label Position', 'metformpro'),
+                'label' => __('Label Position', 'metformsa'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'top' => __('Top', 'metformpro'),
-                    'left' => __('Left', 'metformpro'),
+                    'top' => __('Top', 'metformsa'),
+                    'left' => __('Left', 'metformsa'),
                 ],
                 'default' => 'top',
                 'condition' => [
@@ -82,7 +82,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->start_controls_section(
             'label_style_section',
             [
-                'label' => __('Label', 'metformpro'),
+                'label' => __('Label', 'metformsa'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'show_label' => 'yes',
@@ -95,7 +95,7 @@ class Signature_Widget_View extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'label_typography',
-                'label' => __('Typography', 'metformpro'),
+                'label' => __('Typography', 'metformsa'),
                 'selector' => '{{WRAPPER}} .signature-selector-wrapper label',
             ]
         );
@@ -104,7 +104,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'label_color',
             [
-                'label' => __('Text Color', 'metformpro'),
+                'label' => __('Text Color', 'metformsa'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .signature-selector-wrapper label' => 'color: {{VALUE}};',
@@ -116,7 +116,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_responsive_control(
             'label_margin',
             [
-                'label' => __('Margin', 'metformpro'),
+                'label' => __('Margin', 'metformsa'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors' => [
@@ -129,7 +129,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_responsive_control(
             'label_padding',
             [
-                'label' => __('Padding', 'metformpro'),
+                'label' => __('Padding', 'metformsa'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors' => [
