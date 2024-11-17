@@ -64,7 +64,7 @@ class MFSA_Addon_Controller {
     public function add_pro_fields_meta_box() {
         add_meta_box(
             'mfsa_pro_fields_meta_box',             // Unique ID for the meta box
-            __('MetForm Pro Fields', 'metformpro'),  // Meta box title
+            __('MetForm Pro Fields', 'metformsa'),  // Meta box title
             [$this, 'render_pro_fields_meta_box'],   // Callback to render the meta box
             'metform-entry',                         // Screen where it will appear
             'normal',                                // Context where the box will appear
@@ -79,7 +79,7 @@ class MFSA_Addon_Controller {
         $mf_signature = isset($form_data['mf-signature-data']) ? sanitize_text_field($form_data['mf-signature-data']) : null;
        // Display the fields in the meta box
         if ($mf_signature) {
-            echo '<tr class="mf-data-label"><td colspan="2"><strong>' . __('Signature:', 'metformpro') . '</strong></td></tr>';
+            echo '<tr class="mf-data-label"><td colspan="2"><strong>' . __('Signature:', 'metformsa') . '</strong></td></tr>';
             echo '<tr class="mf-data-value"><td class="mf-value-space">&nbsp;</td><td><img src="' . esc_attr($mf_signature) . '" alt="Signature" style="max-width:500px;" /></td></tr>';
         }
 
