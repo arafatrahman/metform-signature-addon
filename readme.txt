@@ -1,6 +1,6 @@
-=== MetForm Signature Field Addon ===
-Contributors: rrrplus  
-Tags: signature, metform, metform digital signature, e-signature, metform signature field  
+=== MetForm Digital Signature Addon ===
+Contributors: yourusername  
+Tags: signature, metform, digital signature, e-signature  
 Requires at least: 5.6  
 Tested up to: 6.x  
 Requires PHP: 7.4  

@@ -1,11 +1,16 @@
 <?php
 /**
- * Plugin Name: MetForm Signature field Addon
- * Description: The MetForm Signature Addon is a powerful extension for the MetForm plugin that lets you effortlessly add signature fields to your forms.
- * Version: 1.0.0
- * Author: Arafat Rahman
- * Author URI: https://rrrplus.co.uk/
+ * Plugin Name:       MetForm Digital Signature Addon
+ * Plugin URI:        https://yourwebsite.com/plugins/metform-signature-addon
+ * Description:       Add digital signature functionality to MetForm for collecting e-signatures in your forms.
+ * Version:           1.0.0
+ * Author:            RRR Plus
+ * Author URI:        https://rrrplus.co.uk/
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       metformsa
  */
+
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
