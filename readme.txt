@@ -2,7 +2,7 @@
 Contributors: yourusername  
 Tags: signature, metform, digital signature, e-signature  
 Requires at least: 5.6  
-Tested up to: 6.x  
+Tested up to: 6.8
 Requires PHP: 7.4  
 Stable tag: 1.0.0  
 License: GPLv2 or later  
@@ -12,7 +12,7 @@ The MetForm Signature Addon allows you to add a digital signature field to MetFo
 
 == Description ==
 
-The MetForm Signature Addon is an easy-to-use extension for the MetForm plugin that enables digital signature functionality. Ideal for businesses, contracts, and agreements, this addon integrates seamlessly with MetForm to streamline your workflow.
+The MetForm Signature Addon adds a digital signature field to MetForm for collecting legally binding e-signatures.
 
 == Installation ==
 
