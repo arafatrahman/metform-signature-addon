@@ -27,11 +27,16 @@ class MFSA_Addon_Controller {
     }
 
     public function mfsa_enqueue_styles() {
-        wp_enqueue_style('metform-addon-style', plugin_dir_url(__DIR__) . '../assets/style.css');
-        wp_enqueue_script('jquery');
+        wp_enqueue_style(
+            'metform-addon-style',
+            plugin_dir_url(__DIR__) . '../assets/style.css',
+            array(), // Dependencies
+            '1.0.0' // Version number
+        );
+         wp_enqueue_script('jquery');
         //wp_enqueue_script('metform-addon-script', plugin_dir_url(__DIR__) . '../assets/script.js', array('jquery'), null, true);
          wp_enqueue_script('metform-signaturepad-script', plugin_dir_url(__DIR__) . '../assets/signaturepad.min.js', array('jquery'), '4.1.7', true);
-         wp_enqueue_script('metform-signature-script', plugin_dir_url(__DIR__) . '../assets/signature.js', array('jquery'), '1.0', true);
+         wp_enqueue_script('metform-signature-script', plugin_dir_url(__DIR__) . '../assets/signature.js', array('jquery'), '1.0.0', true);
 
         }
 
