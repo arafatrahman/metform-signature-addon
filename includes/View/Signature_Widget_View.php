@@ -162,6 +162,8 @@ class Signature_Widget_View extends Widget_Base {
         
         // Hidden input to store signature data URL
         echo "<input type='hidden' name='mf-signature-data' id='mf-signature-data'/>";
+        wp_nonce_field('metform_signature_action', 'metform_signature_nonce'); ?><?php
+        
         echo '</div>';
     
     }
