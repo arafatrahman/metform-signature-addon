@@ -1,4 +1,5 @@
 <?php
+
 namespace MFSA\View;
 
 use Elementor\Widget_Base;
@@ -150,10 +151,11 @@ class Signature_Widget_View extends Widget_Base {
     
         echo "<div class='signature-selector-wrapper {$label_class}'>";
         if ($settings['show_label'] === 'yes') {
-            echo "<label for='mf-signature-canvas' class='signature-label'>{$settings['label_text']}</label>";
+            // Escape the label text for security
+            echo "<label for='mf-signature-canvas' class='signature-label'>" . esc_html($settings['label_text']) . "</label>";
         }
     
-            // Canvas element for drawing the signature
+        // Canvas element for drawing the signature
         echo "<canvas id='mf-signature-canvas' style='border: 1px solid #000; width: 100%; max-width: 100%; height: 150px;'></canvas>";
         echo "<button type='button' id='mf-save-signature'>Save</button>";
 
@@ -162,15 +164,13 @@ class Signature_Widget_View extends Widget_Base {
         
         // Hidden input to store signature data URL
         echo "<input type='hidden' name='mf-signature-data' id='mf-signature-data'/>";
-        wp_nonce_field('metform_signature_action', 'metform_signature_nonce'); ?><?php
+        
+        // Add nonce field for security
+        wp_nonce_field('metform_signature_action', 'metform_signature_nonce');
         
         echo '</div>';
-    
     }
 
-    
-
     protected function content_template() {}
-    
-    
 }
+?>
