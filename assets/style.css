@@ -1,0 +1,56 @@
+#mfpro_pro_fields_meta_box table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#mfpro_pro_fields_meta_box th, 
+#mfpro_pro_fields_meta_box td {
+    padding: 8px;
+    text-align: left;
+}
+
+.signature-selector-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.signature-selector-wrapper.label-top label {
+    margin-bottom: 10px;
+}
+
+.signature-selector-wrapper.label-left {
+    flex-direction: row;
+    align-items: center;
+}
+
+.signature-selector-wrapper.label-left label {
+    margin-right: 10px;
+}
+
+#mf-signature-canvas {
+    width: 100%;    /* Ensure no scaling issues */
+    height: auto;   /* Ensure no scaling issues */
+    max-width: 100%; /* Adjust as needed for responsive design */
+    border: 1px solid #000; /* Optional for visual feedback */
+}
+
+#mf-save-signature {
+    margin-top:2%;
+    border:1px solid green;
+    color:green;
+}
+#mf-clear-signature {
+    margin-top:1%;
+}
+
+#mf-save-signature:hover {
+    background-color: green;
+    margin-top:2%;
+    color:white;
+}
+
+
+
+
+
