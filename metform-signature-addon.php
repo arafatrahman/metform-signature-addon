@@ -4,7 +4,7 @@
  * Plugin URI:        https://rrrplus.co.uk/metform-signature-addon/
  * Description:       Add digital signature functionality to MetForm for collecting e-signatures in your forms.
  * Version:           1.0.0
- * Author:            RRR Plus
+ * Author:            rrrplus
  * Author URI:        https://rrrplus.co.uk/
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html

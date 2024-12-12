@@ -1,5 +1,5 @@
 === MetForm Digital Signature Addon ===
-Contributors: RRR Plus  
+Contributors: rrrplus  
 Tags: signature, metform, digital signature, e-signature  
 Requires at least: 5.6  
 Tested up to: 6.8
