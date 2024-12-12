@@ -8,8 +8,7 @@
  * Author URI:        https://rrrplus.co.uk/
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       'metform-digital-signature-addon'
- * Domain Path:       /languages
+ * Text Domain:       metform-digital-signature-addon
  */
 
 
