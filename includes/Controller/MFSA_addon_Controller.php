@@ -35,7 +35,7 @@ class MFSA_Addon_Controller {
             '1.0.0' // Version number
         );
         wp_enqueue_script('jquery');
-        wp_enqueue_script('metform-signaturepad-script', plugin_dir_url(__DIR__) . '../assets/signaturepad.min.js', array('jquery'), '4.1.7', true);
+        wp_enqueue_script('metform-signaturepad-script', plugin_dir_url(__DIR__) . '../assets/signaturepadmin.js', array('jquery'), '4.1.7', true);
         wp_enqueue_script('metform-signature-script', plugin_dir_url(__DIR__) . '../assets/signature.js', array('jquery'), '1.0.0', true);
     }
 
