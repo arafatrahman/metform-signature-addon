@@ -173,4 +173,3 @@ class Signature_Widget_View extends Widget_Base {
 
     protected function content_template() {}
 }
-?>
