@@ -17,7 +17,7 @@ class Signature_Widget_View extends Widget_Base {
     }
 
     public function get_title() {
-        return __('Signature', 'metformsa');
+        return __('Signature', 'metform-digital-signature-addon');
     }
 
     public function get_icon() {
@@ -32,7 +32,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Signature', 'metformsa'),
+                'label' => __('Signature', 'metform-digital-signature-addon'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -41,9 +41,9 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'label_text',
             [
-                'label' => __('Label Text', 'metformsa'),
+                'label' => __('Label Text', 'metform-digital-signature-addon'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Sign Here', 'metformsa'),
+                'default' => __('Sign Here', 'metform-digital-signature-addon'),
             ]
         );
 
@@ -51,10 +51,10 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'show_label',
             [
-                'label' => __('Show Label', 'metformsa'),
+                'label' => __('Show Label', 'metform-digital-signature-addon'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'metformsa'),
-                'label_off' => __('Hide', 'metformsa'),
+                'label_on' => __('Show', 'metform-digital-signature-addon'),
+                'label_off' => __('Hide', 'metform-digital-signature-addon'),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -64,11 +64,11 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'label_position',
             [
-                'label' => __('Label Position', 'metformsa'),
+                'label' => __('Label Position', 'metform-digital-signature-addon'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'top' => __('Top', 'metformsa'),
-                    'left' => __('Left', 'metformsa'),
+                    'top' => __('Top', 'metform-digital-signature-addon'),
+                    'left' => __('Left', 'metform-digital-signature-addon'),
                 ],
                 'default' => 'top',
                 'condition' => [
@@ -83,7 +83,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->start_controls_section(
             'label_style_section',
             [
-                'label' => __('Label', 'metformsa'),
+                'label' => __('Label', 'metform-digital-signature-addon'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'show_label' => 'yes',
@@ -96,7 +96,7 @@ class Signature_Widget_View extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'label_typography',
-                'label' => __('Typography', 'metformsa'),
+                'label' => __('Typography', 'metform-digital-signature-addon'),
                 'selector' => '{{WRAPPER}} .signature-selector-wrapper label',
             ]
         );
@@ -105,7 +105,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_control(
             'label_color',
             [
-                'label' => __('Text Color', 'metformsa'),
+                'label' => __('Text Color', 'metform-digital-signature-addon'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .signature-selector-wrapper label' => 'color: {{VALUE}};',
@@ -117,7 +117,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_responsive_control(
             'label_margin',
             [
-                'label' => __('Margin', 'metformsa'),
+                'label' => __('Margin', 'metform-digital-signature-addon'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors' => [
@@ -130,7 +130,7 @@ class Signature_Widget_View extends Widget_Base {
         $this->add_responsive_control(
             'label_padding',
             [
-                'label' => __('Padding', 'metformsa'),
+                'label' => __('Padding', 'metform-digital-signature-addon'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors' => [
