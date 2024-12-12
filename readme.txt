@@ -12,8 +12,7 @@ The MetForm Signature Addon allows you to add a digital signature field to MetFo
 
 == Description ==
 
-The MetForm Signature Addon adds a digital signature field to MetForm for collecting legally binding e-signatures.
-
+The MetForm Signature Addon adds a digital signature field to MetForm
 == Additional Information ==
 The source code for `signaturepadmin.js` can be found at:
 https://github.com/szimek/signature_pad
